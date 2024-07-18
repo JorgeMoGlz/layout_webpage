@@ -1,0 +1,38 @@
+.navBar {
+    border: 1px solid blue;
+    /* width: 100%; */
+
+    & .wrapper {
+        border: 1px solid red;
+        max-width: 1920px;
+        width: 95%;
+        margin: auto;
+    }
+
+    & .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+
+        & .navLinks {
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & ul {
+                border: 1px solid black;
+                display: flex;
+
+                & li {
+                    margin-right: 15px;
+
+                    & a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.heroSection {
+    border: 1px solid blue;
+    height: 75vh;
+    max-width: 1920px;
+
+    & .wrapper {
+        border: 1px solid red;
+        max-width: 1920px;
+        width: 90%;
+        margin: auto;
+    }
+
+    & .heroContainer {
+        display: flex;
+
+        & .textSide {
+            display: flex;
+            flex-direction: column;
+            margin: 100px 50px;
+            gap: 30px;
+            flex: 1 1 0;
+
+            & h1 {
+                font-size: 3rem;
+
+                & span {
+                    color: rgb(255, 123, 0);
+                }
+            }
+
+            & p {
+                color: gray;
+                line-height: 1.5;
+            }
+
+            & .cta {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                & button {
+                    position: relative;
+                    color: #ff640d;
+                    padding: 12px 30px;
+                    font-size: 22px;
+                    border: 2px solid;
+                    border-color: #ff640d;
+                    background: #ffffff;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: .3s;
+
+                    &:nth-child(2) {
+                        background-color: #ff640d;
+                        border-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        & .visualSide {
+            border: 1px solid white;
+            flex: 1 1 0;
+            /* margin: 10px; */
+            height: 600px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid black;
+            }
+            & .firstImage {
+                grid-column: 1/4;
+                grid-row: 1/4;
+            }
+            & .secondImage {
+                grid-column: 2/4;
+                grid-row: 4/6;
+            }
+            & .thirdImage {
+                grid-column: 4/7;
+                grid-row: 3/5;
+            }
+        }
+    }
+}
